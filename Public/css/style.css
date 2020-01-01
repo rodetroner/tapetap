@@ -31,6 +31,14 @@ form > input {
 	opacity: 1;
 }
 
+form > div > label {
+	text-align: left;
+	font: Bold 10px/11px Arial;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	background: #361D33 0% 0% no-repeat padding-box;
+}
+
 .logo {
 	display: flex;
 	flex-direction: column;
