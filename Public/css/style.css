@@ -25,18 +25,19 @@ form {
 	justify-content: center;
 }
 
-form > input {
-	background: #FFFFFF 0% 0% no-repeat padding-box;
-	border: 1px solid #7FC4FD;
-	opacity: 1;
-}
-
 form > div > label {
 	text-align: left;
 	font: Bold 10px/11px Arial;
 	letter-spacing: 0;
 	color: #FFFFFF;
-	background: #361D33 0% 0% no-repeat padding-box;
+	background: #361D33 0% 0% no-repeat;
+	padding: 1em 1em 1em 1em;
+    margin: 0 0 0 0;
+}
+
+form > div > input{
+	padding: .2em .6em .2em .6em;
+    margin: 0 0 1em 0em;
 }
 
 .logo {
@@ -44,6 +45,7 @@ form > div > label {
 	flex-direction: column;
 	align-items: center;
 	width: 30%;
+    margin: 4em 4em 4em 4em;
 	opacity: 1;
 }
 
