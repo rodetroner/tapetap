@@ -16,7 +16,8 @@ body {
 form {
 	display: flex;
 	flex-direction: column;
-	width: 30%;
+	width: 20%;
+	margin: 4em;
 }
 
 .formlinecontainer {
@@ -28,7 +29,7 @@ form > div > label {
 	font: Bold 10px/11px Arial;
 	color: #FFFFFF;
 	background: #361D33;
-	padding: 1.5em 1.5em 1.5em 1.5em;
+	padding: 1.5em;
 }
 
 form > div > input{
@@ -39,8 +40,7 @@ form > div > input{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 30%;
-    margin: 4em 4em 4em 4em;
+    margin: 4em;
 }
 
 .logo > img {
