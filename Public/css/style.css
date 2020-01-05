@@ -25,6 +25,10 @@ form {
 	justify-content: center;
 }
 
+.formlinecontainer {
+	display: flex;
+}
+
 form > div > label {
 	text-align: left;
 	font: Bold 10px/11px Arial;
@@ -38,6 +42,7 @@ form > div > label {
 form > div > input{
 	padding: .2em .6em .2em .6em;
     margin: 0 0 1em 0em;
+	flex-grow: 1;
 }
 
 .logo {
