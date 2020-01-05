@@ -21,13 +21,14 @@ form {
 
 .formlinecontainer {
 	display: flex;
+	margin-bottom: 1em;
 }
 
 form > div > label {
 	font: Bold 10px/11px Arial;
 	color: #FFFFFF;
 	background: #361D33;
-	padding: 1em 1em 1em 1em;
+	padding: 1.5em 1.5em 1.5em 1.5em;
 }
 
 form > div > input{
