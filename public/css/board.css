@@ -10,6 +10,17 @@
 	background: rgba(188, 148, 121, .4);
 }
 
+.boardlogo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boardlogo > img {
+	width: 8em;
+	margin: 3em;
+}
+
 .board {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
