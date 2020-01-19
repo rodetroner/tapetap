@@ -11,6 +11,11 @@
 }
 
 .navitem {
+	text-align: right;
+	font: Bold 17px/12px Arial;
+	margin-right: 2.5em;
+	padding: 0.75em;
+	color: white;
 }
 
 .boardlogo {
