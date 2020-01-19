@@ -10,6 +10,9 @@
 	background: rgba(188, 148, 121, .4);
 }
 
+.navitem {
+}
+
 .boardlogo {
 	display: flex;
 	flex-direction: column;
