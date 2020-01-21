@@ -9,7 +9,7 @@ class Routing {
 		$this->routes = [
 			'board' => [
 				'controller' => 'BoardController',
-				'action' => 'getLatestPhotos'
+				'action' => 'getLatestPodcasts'
 			]
 		];
 	}
