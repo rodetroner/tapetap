@@ -32,90 +32,14 @@
 			</div>
 		</div>
 		<div class="board">
-			<div class="item">
-				<div class="art">
+			<?php foreach($podcasts as $podcast): ?>
+				<div class="item">
+					<div class="art">
+					</div>
+					<div class="label">
+					</div>
 				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
-			<div class="item">
-				<div class="art">
-				</div>
-				<div class="label">
-				</div>
-			</div>
+			<?php endforeach ?>
 		</div>
 	</div>
 </body>

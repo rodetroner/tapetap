@@ -7,9 +7,11 @@ class BoardController extends AppController {
 
 	public function getLatestPodcasts()
 	{
-		$podcast1 = new Podcast('cdisc.png');
+		$podcast1 = new Podcast();
+		$podcast2 = new Podcast();
+		$podcast3 = new Podcast();
 
-		$data = [$podcast1];
+		$data = [$podcast1, $podcast2, $podcast3];
 		$this->render('board', ['podcasts' => $data]);
 	}
 }
