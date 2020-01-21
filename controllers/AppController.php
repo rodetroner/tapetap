@@ -13,8 +13,18 @@ class AppController {
 		return $this->request === 'GET';
 	}
 
-	protected function render() {
-		die('Rendering not yet implemented');
+	protected function render(string $template=null, array $variables=[]) {
+		$templatePath = $template ? dirname(__DIR__) . '/views/' . get_class($this) . '/' . $template . '.php' : '';
+		$output = 'File not found';
+
+		if (file_exists($templatePath)) {
+			extract($variables);
+
+			ob_start();
+			include $templatePath;
+			$output = ob_get_clean();
+		}
+		print $output;
 	}
 }
 
