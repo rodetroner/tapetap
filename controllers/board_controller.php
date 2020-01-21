@@ -4,7 +4,7 @@ require_once('app_controller.php');
 
 class BoardController extends AppController {
 
-	public function getLatestItems()
+	public function getLatestPodcasts()
 	{
 		$this->render();
 	}
