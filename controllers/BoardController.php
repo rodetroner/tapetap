@@ -1,6 +1,6 @@
 <?php
 
-require_once('app_controller.php');
+require_once('AppController.php');
 
 class BoardController extends AppController {
 

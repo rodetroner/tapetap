@@ -1,6 +1,6 @@
 <?php
 
-require_once 'routing.php';
+require_once 'Routing.php';
 
 $router = new Routing();
 $router->run();

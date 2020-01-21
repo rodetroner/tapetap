@@ -1,6 +1,6 @@
 <?php
 
-require_once 'controllers/board_controller.php';
+require_once 'controllers/BoardController.php';
 
 class Routing {
 	private $routes = [];
@@ -22,7 +22,7 @@ class Routing {
 			$action = $this->routes[$page]['action'];
 
 			$object = new $controller;
-			$objcet->$action();
+			$object->$action();
 		}
 	}
 }
