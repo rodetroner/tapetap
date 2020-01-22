@@ -1,6 +1,7 @@
 <?php
 
 require_once 'controllers/BoardController.php';
+require_once 'controllers/SecurityController.php';
 
 class Routing {
 	private $routes = [];
@@ -10,7 +11,11 @@ class Routing {
 			'board' => [
 				'controller' => 'BoardController',
 				'action' => 'getLatestPodcasts'
-			]
+			],
+			'index' => [
+                'controller' => 'SecurityController',
+                'action' => 'login'
+            ]
 		];
 	}
 
