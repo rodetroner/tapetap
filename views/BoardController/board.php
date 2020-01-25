@@ -39,7 +39,7 @@
 				SETTINGS
 			</div>
 			<div class="navitem">
-				LOGOUT
+				<a href="?page=logout">LOGOUT</a>
 			</div>
 			<div class="controls">
 			</div>

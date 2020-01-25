@@ -29,6 +29,11 @@
 	color: white;
 }
 
+.navitem > a {
+	text-decoration: none;
+	color: white;
+}
+
 .board {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
