@@ -13,6 +13,10 @@ class AppController {
 		return $this->request === 'GET';
 	}
 
+	protected function isPost(): bool {
+		return $this->request == 'POST';
+	}
+
 	protected function render(string $template=null, array $variables=[]) {
 		$templatePath = $template ? dirname(__DIR__) . '/views/' . get_class($this) . '/' . $template . '.php' : '';
 		$output = 'File not found';

@@ -8,7 +8,16 @@
 	<div class="logo">
 		<img src="../public/img/logo-transparent.svg">
 	</div>
-	<form>
+	<form action="?page=login" method="POST">
+		<div class="messages">
+			<?php
+				if (isset($messages)) {
+					foreach($messages as $message) {
+						echo $message;
+					}
+				}
+			?>
+		</div>
 		<div class="formlinecontainer">
 			<label for="username">USERNAME</label>
 			<input name="username" type="text">
