@@ -17,6 +17,10 @@ class User {
 	public function getPassword() {
 		return $this->password;
 	}
+
+	public function getRole(): array {
+		return $this->role;
+	}
 }
 
 ?>
