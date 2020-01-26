@@ -11,9 +11,9 @@ class BoardController extends AppController {
 		$database = new Database();
 		$database->connect();
 
-		$podcast1 = new Podcast();
-		$podcast2 = new Podcast();
-		$podcast3 = new Podcast();
+		$podcast1 = new Podcast(1, 'History Podcast', 'Best out there', 1);
+		$podcast2 = new Podcast(2, 'Science Podcast', 'Best out there', 1);
+		$podcast3 = new Podcast(3, 'Comedy Podcast', 'Best out there', 1);
 
 		$data = [$podcast1, $podcast2, $podcast3];
 		$this->render('board', ['podcasts' => $data]);
