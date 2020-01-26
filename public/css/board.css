@@ -54,6 +54,7 @@
 .label {
 	background: #FFFFFF;
 	height: 3em;
-	width: inherit
+	width: inherit;
+	color: black;
 }
 

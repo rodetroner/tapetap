@@ -41,6 +41,7 @@
 					<div class="art">
 					</div>
 					<div class="label">
+						<?= $podcast->getTitle(); ?>
 					</div>
 				</div>
 			<?php endforeach ?>
