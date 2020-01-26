@@ -2,18 +2,22 @@
 
 require_once 'AppController.php';
 require_once __DIR__ . '/../models/User.php';
+require_once __DIR__ . '/../repository/UserRepository.php';
 
 class SecurityController extends AppController {
 
 	public function login() {
-		$user = new User('a', 'a');
+
+		$userRepository = new UserRepository();
 
 		if ($this->isPost()) {
 			$username= $_POST['username'];
 			$password = $_POST['password'];
 
-			if ($user->getUsername() !== $username) {
-				$this->render('login', ['messages' => ['User with name does not exist.']]);
+			$user = $userRepository->getUser($username);
+
+			if (!$user) {
+				$this->render('login', ['messages' => ['User with this name does not exist.']]);
 				return;
 			}
 

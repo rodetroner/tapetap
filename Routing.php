@@ -2,6 +2,7 @@
 
 require_once 'controllers/BoardController.php';
 require_once 'controllers/SecurityController.php';
+require_once 'controllers/AdminController.php';
 
 class Routing {
 	private $routes = [];
@@ -19,6 +20,10 @@ class Routing {
 			'logout' => [
 				'controller' => 'SecurityController',
 				'action' => 'logout'
+			],
+			'users' => [
+				'controller' => 'AdminController',
+				'action' => 'users'
 			]
 		];
 	}
